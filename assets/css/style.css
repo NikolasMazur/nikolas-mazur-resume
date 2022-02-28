@@ -1,0 +1,51 @@
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFEBCD;
+  font-family: 'Kaisei HarunoUmi', Times, Serif;
+  font-variant: small-caps;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  font-size: 3em;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 4px solid #000;
+}
+  
+.links a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: .5s ease-in-out;
+}
+
+.navigation {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+.main-project {
+ border: 3px solid black;
+ flex: 1;
+ flex-direction: row;
+}
+
+.project-card {
+  border: 3px solid black;
+  flex: 1 0 0;
+  flex-direction: row;
+}
