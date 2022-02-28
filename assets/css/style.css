@@ -38,9 +38,9 @@ header {
   line-height: 1.5em;
 }
 
-.main-project {
+#main-project {
  border: 3px solid black;
- flex: 1;
+ flex: 3;
  flex-direction: row;
 }
 
