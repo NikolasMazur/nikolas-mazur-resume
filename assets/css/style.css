@@ -8,23 +8,32 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #FFEBCD;
-  font-family: 'Kaisei HarunoUmi', Times, Serif;
-  font-variant: small-caps;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  padding: 1%;
-  font-size: 3em;
+
+.flex {
+  flex: auto;
+}
+
+
+/* General Styles */
+body {
+  background-color: #FFEBCD;
+  font-family: 'Kaisei HarunoUmi', Times, Serif;
+  font-variant: small-caps;
+}
+
+h2,
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 2em;
 }
 
 .title {
@@ -32,6 +41,62 @@ header {
   margin-top: 1em;
 }
 
+/* Content */
+header {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  font-size: 3em;
+}
+
+#main-project {
+  flex: 1 0 0;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  flex: 90%;
+ }
+ 
+ .project-card {
+   flex: 1 0 0;
+   flex-shrink: 2;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   position: relative;
+   text-align: center;
+   overflow: hidden;
+   flex: 33%;
+ }
+ 
+ #main-project img,
+ .project-card img {
+   width: 100%;
+   opacity: 0.7;
+   width: 100%;
+   height: auto;
+ }
+ 
+ .project-card a,
+ #main-project a {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: var(--black);
+   font-size: 5vw;
+   z-index: 1;
+ }
+
+.photo {
+  max-height: 25vh;
+}
+
+/* Links */
 .links {
   line-height: 70px;
 }
@@ -54,66 +119,12 @@ header {
   text-align: center;
 }
 
-#main-project {
- flex: 1 0 0;
- flex-shrink: 1;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
- position: relative;
- text-align: center;
- overflow: hidden;
- flex: 90%;
-}
-
-.project-card {
-  flex: 1 0 0;
-  flex-shrink: 2;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  flex: 33%;
-}
-
-#main-project img,
-.project-card img {
-  width: 100%;
-  opacity: 0.7;
-  width: 100%;
-  height: auto;
-}
-
-.project-card a,
-#main-project a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--black);
-  font-size: 5vw;
-  z-index: 1;
-}
-
-.flex {
-  flex: auto;
-}
+/* Sections */
 
 #about-me {
   justify-content: center;
   text-align: center;
   margin-top: 30px;
-}
-
-h2,
-h3 {
-  font-size: 2.5em;
-}
-
-p {
-  font-size: 2em;
 }
 
 #contact {
@@ -130,12 +141,9 @@ p {
   font-size: 2em;
 }
 
-.photo {
-  max-height: 25vh;
-}
 
+/* Media */
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
   main,
   header,
   #main-project,
