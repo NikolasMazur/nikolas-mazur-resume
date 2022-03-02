@@ -84,8 +84,6 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
-  /* transform: scale(1.15); */
-  /* transition: transform 0.5s, opacity 0.5s; */
 }
 
 .project-card a,
@@ -98,12 +96,6 @@ header {
   font-size: 5vw;
   z-index: 1;
 }
-
-/* #main-project img:hover, */
-/* .project-card img:hover { */
-  /* opacity: 1; */
-  /* transform: scale(1.03); */
-/* } */
 
 .flex {
   flex: auto;
