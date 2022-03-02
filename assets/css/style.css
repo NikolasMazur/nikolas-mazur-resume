@@ -129,3 +129,19 @@ p {
   text-align: center;
   font-size: 2em;
 }
+
+.photo {
+  max-height: 25vh;
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  header,
+  #main-project,
+  .project-card,
+  .flex
+  .navigation {
+    flex-direction: column;
+  }
+}
