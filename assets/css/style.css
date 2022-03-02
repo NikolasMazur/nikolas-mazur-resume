@@ -27,6 +27,15 @@ header {
   font-size: 3em;
 }
 
+.title {
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.links {
+  line-height: 70px;
+}
+
 .links a {
   text-decoration: none;
   color: var(--black);
@@ -41,11 +50,11 @@ header {
 
 .navigation {
   font-size: 3em;
-  line-height: 1.5em;
+  justify-content: center;
+  text-align: center;
 }
 
 #main-project {
- border: 3px solid var(--black);
  flex: 1 0 0;
  flex-shrink: 1;
  flex-direction: row;
@@ -54,10 +63,10 @@ header {
  position: relative;
  text-align: center;
  overflow: hidden;
+ flex: 90%;
 }
 
 .project-card {
-  border: 3px solid var(--black);
   flex: 1 0 0;
   flex-shrink: 2;
   flex-direction: row;
@@ -65,14 +74,14 @@ header {
   justify-content: space-between;
   position: relative;
   text-align: center;
-  max-width: 25%;
   overflow: hidden;
+  flex: 33%;
 }
 
 #main-project img,
 .project-card img {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.7;
   width: 100%;
   height: auto;
   /* transform: scale(1.15); */
@@ -85,8 +94,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--white);
-  font-size: 1.5em;
+  color: var(--black);
+  font-size: 5vw;
   z-index: 1;
 }
 
@@ -98,4 +107,33 @@ header {
 
 .flex {
   flex: auto;
+}
+
+#about-me {
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2,
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 2em;
+}
+
+#contact {
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
 }
