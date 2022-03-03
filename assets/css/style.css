@@ -14,12 +14,6 @@ main {
   flex-direction: row;
 }
 
-
-.flex {
-  flex: auto;
-}
-
-
 /* General Styles */
 body {
   background-color: #FFEBCD;
@@ -33,20 +27,29 @@ h3 {
 }
 
 p {
-  font-size: 2em;
+  font-size: 1.75em;
+  margin: 15px 33%;
+}
+
+/* Content */
+.flex {
+  flex: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .title {
   justify-content: center;
   margin-top: 1em;
+  margin-left: 1em;
 }
 
-/* Content */
-header {
-  display: flex;
-  align-items: center;
-  padding: 1%;
-  font-size: 3em;
+.indent {
+  margin-left: 1.25em;
 }
 
 #main-project {
@@ -79,11 +82,19 @@ header {
    opacity: 0.7;
    width: 100%;
    height: auto;
+   transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
  }
  
+ #main-project img:hover,
+ .project-card img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
  .project-card a,
  #main-project a {
-   position: absolute;
+   /* position: absolute; */
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -99,6 +110,7 @@ header {
 /* Links */
 .links {
   line-height: 70px;
+  margin-bottom: 30px;
 }
 
 .links a {
@@ -120,6 +132,12 @@ header {
 }
 
 /* Sections */
+header {
+  /* display: flex; */
+  align-items: center;
+  padding: 1%;
+  font-size: 3em;
+}
 
 #about-me {
   justify-content: center;
@@ -139,6 +157,10 @@ header {
   justify-content: center;
   text-align: center;
   font-size: 2em;
+}
+
+.footer li {
+  margin: 0 0 0 0;
 }
 
 
