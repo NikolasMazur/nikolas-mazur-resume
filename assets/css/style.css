@@ -170,8 +170,11 @@ header {
   header,
   #main-project,
   .project-card,
-  .flex
+  .flex,
   .navigation {
     flex-direction: column;
+  }
+  p.text {
+    font-size: .5;
   }
 }
