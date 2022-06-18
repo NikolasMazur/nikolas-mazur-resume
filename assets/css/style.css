@@ -26,6 +26,11 @@ h3 {
   font-size: 2.5em;
 }
 
+.repo,
+h4 {
+  font-size: 1em;
+}
+
 p {
   font-size: 1.75em;
   margin: 15px 15%;
@@ -142,14 +147,14 @@ header {
 #about-me {
   justify-content: center;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 #contact {
   justify-content: center;
   text-align: center;
   line-height: 30px;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 
