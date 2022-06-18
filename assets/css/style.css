@@ -1,6 +1,9 @@
 :root {
   --black: #000;
   --white: #fff;
+  --wheat: #E8D2AE;
+  --tumbleweed: #D7B29D;
+  --lavender: #EEE5E9;
 }
 
 /* Universal */
@@ -24,11 +27,6 @@ body {
 h2,
 h3 {
   font-size: 2.5em;
-}
-
-.repo,
-h4 {
-  font-size: 1em;
 }
 
 p {
@@ -67,46 +65,64 @@ p {
   text-align: center;
   overflow: hidden;
   flex: 90%;
+  background-color: var(--lavender);
  }
  
- .project-card {
-   flex: 1 0 0;
-   flex-shrink: 2;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   position: relative;
-   text-align: center;
-   overflow: hidden;
-   flex: 33%;
- }
+.project-card {
+  flex: 1 0 0;
+  flex-shrink: 2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  flex: 30%;
+  background-color: var(--lavender);
+}
  
- #main-project img,
- .project-card img {
-   width: 100%;
-   opacity: 0.5;
-   width: 100%;
-   height: auto;
-   transform: scale(1.15);
-  transition: transform 0.5s, opacity 0.5s;
- }
+#main-project img,
+.project-card img {
+ width: 100%;
+ opacity: 0.5;
+ width: 100%;
+ height: auto;
+ transform: scale(1.15);
+ transition: transform 0.5s, opacity 0.5s;
+}
  
- #main-project img:hover,
- .project-card img:hover {
-  opacity: 1;
-  transform: scale(1.03);
+#main-project img:hover,
+.project-card img:hover {
+ opacity: 1;
+ transform: scale(1.03);
 }
 
- .project-card a,
- #main-project a {
-   /* position: absolute; */
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: var(--black);
-   font-size: 5vw;
-   z-index: 1;
- }
+.project-card a,
+#main-project a {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--black);
+  font-size: 5vw;
+  z-index: 1;
+}
+
+#main-project {
+  border: 5px solid var(--black);
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.project-card {
+  border: 5px solid var(--black);
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
 
 .photo {
   max-height: 25vh;
